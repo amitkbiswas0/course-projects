@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucam.control.SectionPopupLabController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TableView fx:id="sectionTable" layoutX="119.0" layoutY="145.0" prefHeight="191.0" prefWidth="402.0">
+              <columns>
+                <TableColumn fx:id="sectionCol" prefWidth="70.0" text="Section" />
+                <TableColumn fx:id="dayCol" text="Day" />
+                  <TableColumn fx:id="timeCol" prefWidth="180.0" text="Time" />
+                  <TableColumn fx:id="teacherCol" prefWidth="70.0" text="Teacher" />
+              </columns>
+            </TableView>
+            <JFXButton fx:id="sectionChoose" layoutX="265.0" layoutY="384.0" onAction="#handleSectionChoose" text="Select Section">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane prefHeight="435.0" prefWidth="900.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="ucam.control.ChangePasswordController">
+
+    <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <children>
+            <JFXPasswordField fx:id="oldpass" alignment="CENTER" labelFloat="true" layoutX="372.0" layoutY="157.0" prefHeight="40.0" prefWidth="200.0" promptText="Old Password">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="newpassOne" alignment="CENTER" labelFloat="true" layoutX="372.0" layoutY="217.0" prefHeight="40.0" prefWidth="200.0" promptText="New Password">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </JFXPasswordField>
+            <JFXPasswordField fx:id="newpassTwo" alignment="CENTER" labelFloat="true" layoutX="372.0" layoutY="277.0" prefHeight="40.0" prefWidth="200.0" promptText="Re-Enter New Password">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </JFXPasswordField>
+            <JFXButton fx:id="changePass" layoutX="404.0" layoutY="347.0" onAction="#handleChangePass" text="Change Password">
+                <padding>
+                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                </padding>
+            </JFXButton>
+            <Label fx:id="errorMsg" layoutX="660.0" layoutY="249.0" text="" />
+        </children>
+    </AnchorPane>
+
+</StackPane>

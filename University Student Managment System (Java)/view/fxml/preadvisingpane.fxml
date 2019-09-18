@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="435.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucam.control.PreadvisingController">
+<AnchorPane prefHeight="435.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+   <children>
+      <TableView fx:id="tableViewFrom" layoutX="150.0" layoutY="230.0" prefHeight="165.0" prefWidth="520.0">
+         <columns>
+            <TableColumn fx:id="serialCol1" prefWidth="30.0" text="SL" />
+            <TableColumn fx:id="codeCol1" prefWidth="70.0" text="Code" />
+            <TableColumn fx:id="titleCol1" prefWidth="265.0" text="Title" />
+            <TableColumn fx:id="creditCol1" prefWidth="75.0" text="Credit" />
+            <TableColumn fx:id="trimesterCol1" text="Trimester" />
+         </columns>
+      </TableView>
+      <TableView fx:id="tableViewTo" layoutX="150.0" layoutY="35.0" prefHeight="165.0" prefWidth="520.0">
+         <columns>
+            <TableColumn fx:id="serialCol2" prefWidth="30.0" text="SL" />
+            <TableColumn fx:id="codeCol2" prefWidth="70.0" text="Code" />
+            <TableColumn fx:id="titleCol2" prefWidth="265.0" text="Title" />
+            <TableColumn fx:id="creditCol2" prefWidth="75.0" text="Credit" />
+            <TableColumn fx:id="trimesterCol2" text="Trimester" />
+         </columns>
+      </TableView>
+      <JFXButton fx:id="addCourse" layoutX="700.0" layoutY="205.0" onAction="#handleAddCourse" text="Add Course">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </JFXButton>
+   </children>
+</AnchorPane>
+</StackPane>

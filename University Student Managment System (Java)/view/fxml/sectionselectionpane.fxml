@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="435.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucam.control.SectionSelectionController">
+    <AnchorPane prefHeight="435.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+        <children>
+            <TableView fx:id="tableView" layoutX="60.0" layoutY="110.0" prefHeight="222.0" prefWidth="571.0">
+                <columns>
+                    <TableColumn fx:id="serialCol" prefWidth="30.0" text="SL" />
+                    <TableColumn fx:id="codeCol" prefWidth="70.0" text="Code" />
+                    <TableColumn fx:id="titleCol" prefWidth="250.0" text="Title" />
+                    <TableColumn fx:id="creditCol" prefWidth="75.0" text="Credit" />
+                    <TableColumn fx:id="trimesterCol" text="Trimester" />
+                    <TableColumn fx:id="sectionCol" prefWidth="65.0" text="Section" />
+                </columns>
+            </TableView>
+            <JFXButton fx:id="sectionSelect" buttonType="RAISED" layoutX="695.0" layoutY="110.0" onAction="#handleSectionSelect" prefHeight="45.0" prefWidth="140.0" text="Section Selection">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </JFXButton>
+            <JFXButton fx:id="removeCourse" buttonType="RAISED" layoutX="695.0" layoutY="165.0" onAction="#handleRemoveCourse" prefHeight="45.0" prefWidth="140.0" text="Remove Course">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </JFXButton>
+            <JFXButton fx:id="registration" buttonType="RAISED" layoutX="695.0" layoutY="285.0" onAction="#handleRegistration" prefHeight="45.0" prefWidth="140.0" text="Registration">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </JFXButton>
+            <JFXButton fx:id="refreshButton" buttonType="RAISED" layoutX="695.0" layoutY="220.0" onAction="#handleRefreshButton" prefHeight="45.0" prefWidth="140.0" text="Refresh">
+                <padding>
+                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                </padding>
+            </JFXButton>
+        </children>
+    </AnchorPane>
+</StackPane>

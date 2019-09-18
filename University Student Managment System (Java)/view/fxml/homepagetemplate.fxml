@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucam.control.HomepageController">
+    <top>
+        <AnchorPane prefHeight="0.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+            <children>
+                <MenuBar fx:id="menuBar" layoutY="67.0" prefHeight="30.0" prefWidth="900.0">
+                    <menus>
+                        <Menu fx:id="homeMenu" mnemonicParsing="false" text="" />
+                        <Menu mnemonicParsing="false" text="Registration">
+                            <items>
+                                <MenuItem fx:id="sectionSelectionMenu" mnemonicParsing="false" onAction="#handleSectionSelectionMenu" text="Section Selection &amp; Registration Now" />
+                                <MenuItem fx:id="preadvisingMenu" mnemonicParsing="false" onAction="#handlePreadvisingMenu" text="Pre-advising (New)" />
+                                <MenuItem fx:id="preadvisingReMenu" mnemonicParsing="false" onAction="#handlePreadvisingReMenu" text="Pre-advising (Retake)" />
+                            </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Account">
+                            <items>
+                                <MenuItem fx:id="changePassMenu" mnemonicParsing="false" onAction="#handleChangePassMenu" text="Change Password" />
+                                <MenuItem fx:id="classRoutineMenu" mnemonicParsing="false" onAction="#handleClassRoutineMenu" text="Class Routine" />
+                                <MenuItem fx:id="resultHistoryMenu" mnemonicParsing="false" onAction="#handleResultHistoryMenu" text="Result History" />
+                            </items>
+                        </Menu>
+                        <Menu fx:id="paymentMenu" mnemonicParsing="false" text="" />
+                        <Menu mnemonicParsing="false" text="Feedback">
+                            <items>
+                                <MenuItem fx:id="courseEvalMenu" mnemonicParsing="false" onAction="#handleCourseEvalMenu" text="Course Evaluation" />
+                                <MenuItem fx:id="contactMenu" mnemonicParsing="false" onAction="#handleContactMenu" text="Contact Authority" />
+                            </items>
+                        </Menu>
+                    </menus>
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </MenuBar>
+                <ImageView fitHeight="200.0" fitWidth="250.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../images/header-logo.png" />
+                    </image>
+                </ImageView>
+                <JFXButton fx:id="logoutButton" buttonType="RAISED" layoutX="830.0" layoutY="23.0" onAction="#handleLogoutButton" text="Log Out" textAlignment="CENTER">
+                    <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </padding>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+    </top>
+    <center>
+      <StackPane fx:id="paneHolder" BorderPane.alignment="CENTER" />
+    </center>
+    <bottom>
+        <Label text="All rights reserved by @Amit Biswas" BorderPane.alignment="CENTER" />
+    </bottom>
+</BorderPane>
